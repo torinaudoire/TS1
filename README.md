@@ -24,7 +24,6 @@
     .fn {
         color: #005bbb;
         cursor: pointer;
-        vertical-align: super;
         margin-left: 2px;
         text-decoration: none;
     }
