@@ -13,15 +13,15 @@ body {
     padding: 0 15px;
 }
 
-/* Footnote trigger inline text */
+/* fn trigger inline text */
 .fn {
     color: #005bbb;
     cursor: pointer;
 }
 
-/* Dynamically inserted footnote container */
+/* fn container */
 .fn-inserted {
-    display: block; /* so it pushes text */
+    display: block; 
     background: #f0f4ff;
     border-left: 3px solid #005bbb;
     padding: 8px 12px;
@@ -37,7 +37,7 @@ body {
 }
 
 .fn-wrapper:hover {
-    color: #003377; /* subtle hover color change */
+    color: #003377; 
 }
 
 .fn-content {
@@ -59,7 +59,7 @@ body {
 }
 
 .fn-wrapper:hover .fn-content {
-    max-height: 500px; /* enough for most footnotes */
+    max-height: 500px; 
     padding: 12px;
     margin-top: 4px;
     opacity: 1;
@@ -120,7 +120,7 @@ const footnotes = {
     "5": "固若金汤, an idiom meaning \"secure as a city surrounded by metal walls and boiling water\"."
 };
 
-// Insert footnote dynamically on hover
+// insert fn on hover
 document.querySelectorAll('.fn').forEach(el => {
     let inserted = null;
 
