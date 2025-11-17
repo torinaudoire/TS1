@@ -27,6 +27,45 @@ body {
     padding: 8px 12px;
     margin: 4px 0 12px 0;
 }
+
+    .fn-wrapper {
+    display: inline-block;
+    color: #005bbb;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.fn-wrapper:hover {
+    color: #003377; /* subtle hover color change */
+}
+
+.fn-content {
+    max-height: 0;
+    overflow: hidden;
+    display: block;
+    background: #f0f4ff;
+    border-left: 3px solid #005bbb;
+    padding: 0 12px;
+    margin: 0;
+    opacity: 0;
+    transform: scaleY(0.95);
+    transform-origin: top;
+    transition: 
+        max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+        opacity 0.3s ease-in-out, 
+        transform 0.35s ease;
+    border-radius: 4px;
+}
+
+.fn-wrapper:hover .fn-content {
+    max-height: 500px; /* enough for most footnotes */
+    padding: 12px;
+    margin-top: 4px;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
 </style>
 </head>
 <body>
