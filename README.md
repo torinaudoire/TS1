@@ -15,28 +15,38 @@
     }
 
   /* Footnote marker */
+.fn-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+/* The clickable/hoverable marker */
 .fn {
     color: #005bbb;
     cursor: pointer;
-    font-weight: normal;     
-    font-size: 1em;       
+    font-size: 0.75em;
     vertical-align: super;
     margin-left: 2px;
-    text-decoration: none;   /* no underline */
+    text-decoration: none;
 }
 
-    }
+/* Hidden footnote content (inline, pushes text down) */
+.fn-popup {
+    max-height: 0;
+    overflow: hidden;
+    background: #f0f4ff;
+    border-left: 3px solid #005bbb;
+    padding: 0 12px;
+    margin-top: 4px;
+    transition: max-height 0.25s ease, padding 0.25s ease;
+}
 
-    /* Hidden panel container */
-    .footnote-panel {
-        max-height: 0;
-        overflow: hidden;
-        background: #f0f4ff;
-        border-left: 3px solid #005bbb;
-        padding: 0 12px;
-        margin: 6px 0 12px;
-        transition: max-height 0.25s ease, padding 0.25s ease;
-    }
+/* EXPAND on hover */
+.fn-wrapper:hover .fn-popup {
+    max-height: 300px;   /* enough for your notes */
+    padding: 12px;
+}
+
 
     /* Active (expanded) state */
     .footnote-panel.open {
