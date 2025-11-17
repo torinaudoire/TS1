@@ -1,84 +1,66 @@
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Miss Mu and the Canary</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miss Mu and the Canary</title>
 
-<style>
-body {
-    font-family: system-ui, sans-serif;
-    max-width: 700px;
-    margin: 40px auto;
-    line-height: 1.6;
-    padding: 0 15px;
-}
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 700px;
+            margin: 40px auto;
+            line-height: 1.6;
+            padding: 0 15px;
+        }
 
-/* fn trigger inline text */
-.fn {
-    color: #005bbb;
-    cursor: pointer;
-}
+        /* Footnote wrapper inline */
+        .fn-wrapper {
+            color: #005bbb;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+        }
 
-/* fn container */
-.fn-inserted {
-    display: block; 
-    background: #f0f4ff;
-    border-left: 3px solid #005bbb;
-    padding: 8px 12px;
-    margin: 4px 0 12px 0;
-}
+        /* Popup content (collapsed by default) */
+        .fn-content {
+            max-height: 0;
+            overflow: hidden;
+            display: block;
+            background: #f0f4ff;
+            border-left: 3px solid #005bbb;
+            padding: 0 12px;
+            margin: 0;
+            opacity: 0;
+            transform: scaleY(0.95);
+            transform-origin: top;
+            transition: 
+                max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+                opacity 0.3s ease-in-out, 
+                transform 0.35s ease;
+            border-radius: 4px;
+        }
 
-    .fn-wrapper {
-    display: inline-block;
-    color: #005bbb;
-    cursor: pointer;
-    position: relative;
-    transition: color 0.2s ease;
-}
-
-.fn-wrapper:hover {
-    color: #003377; 
-}
-
-.fn-content {
-    max-height: 0;
-    overflow: hidden;
-    display: block;
-    background: #f0f4ff;
-    border-left: 3px solid #005bbb;
-    padding: 0 12px;
-    margin: 0;
-    opacity: 0;
-    transform: scaleY(0.95);
-    transform-origin: top;
-    transition: 
-        max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
-        opacity 0.3s ease-in-out, 
-        transform 0.35s ease;
-    border-radius: 4px;
-}
-
-.fn-wrapper:hover .fn-content {
-    max-height: 500px; 
-    padding: 12px;
-    margin-top: 4px;
-    opacity: 1;
-    transform: scaleY(1);
-}
-
-</style>
+        /* Hover effect: expand footnote */
+        .fn-wrapper:hover .fn-content {
+            opacity: 1;
+            transform: scaleY(1);
+            margin-top: 4px;
+        }
+    </style>
 </head>
+
 <body>
 
 <h1>Miss Mu and the Canary</h1>
 
-<p>
-“<span class="fn" data-fn="1">Yan’er</span>, I’m not like you. I was ten years old when I was sold into this cesspit. Everything there is to see, I’ve seen. In a place as dark and corrupt as this, for whores and clients alike, the rarest treasure is a taste of true affection. How happy you were when you were with her — I saw it all.” Fei Hua spoke clearly and deliberately. “But love can’t be eaten at the end of the day. Never mind her reasons for deceiving you — even if she really has feelings for you, what kind of future can you have together? She might keep you for a time, even buy your freedom from this place. But she’s the eldest daughter of the Mu family. Eventually the day will come when she must marry. If it were to a man, he might take you as a <span class="fn" data-fn="2">concubine</span>… But would you really marry into his household along with her? Then what else could you do? Come back here to the brothel?”
+<p>“<span class="fn-wrapper">Yan’er
+    <span class="fn-content">艳儿 Yan'er, a diminutive and affectionate nickname for Bai Yan.</span>
+</span>, I’m not like you. I was ten years old when I was sold into this cesspit. Everything there is to see, I’ve seen. In a place as dark and corrupt as this, for whores and clients alike, the rarest treasure is a taste of true affection. How happy you were when you were with her — I saw it all.” Fei Hua spoke clearly and deliberately. “But love can’t be eaten at the end of the day. Never mind her reasons for deceiving you — even if she really has feelings for you, what kind of future can you have together? She might keep you for a time, even buy your freedom from this place. But she’s the eldest daughter of the Mu family. Eventually the day will come when she must marry. If it were to a man, he might take you as a <span class="fn-wrapper">concubine
+    <span class="fn-content">In the Republican era it was still legal for men to take additional concubines alongside their primary wife, but these concubines were of lower status. It was often seen by elite families as a backwards practice compared to increasingly popular Western norms of monogamy.</span>
+</span>… But would you really marry into his household along with her? Then what else could you do? Come back here to the brothel?”
 </p>
 
-<p>
-The hand holding the letter tightened abruptly. The paper could not withstand the force, and began to crumple inch by inch.
-</p>
+<p>The hand holding the letter tightened abruptly. The paper could not withstand the force, and began to crumple inch by inch.</p>
 
 <p>Yes… Bai Yan thought absently. Were these days of anguish because she couldn’t accept Mu Xing’s gender? Or because she was wounded by Mu Xing’s betrayal? Or was it that…?</p>
 
@@ -91,19 +73,19 @@ The hand holding the letter tightened abruptly. The paper could not withstand th
 
 <p>Bai Yan stared blankly into space for a moment, and then let out a mocking laugh.</p>
 
-<p>
-That was right. She, too, hadn’t gotten close to Mu Xing out of love; she had only <span class="fn" data-fn="3">found a stage upon which to act out her performance</span>. It was true that Mu Xing had lied to her, but had she herself been sincere from the beginning?
-</p>
+<p>That was right. She, too, hadn’t gotten close to Mu Xing out of love; she had only <span class="fn-wrapper">found a stage upon which to act out her performance
+    <span class="fn-content">逢场作戏 ("find a stage and put on a show"). This idiom usually refers to playing along or going through the motions.</span>
+</span>. It was true that Mu Xing had lied to her, but had she herself been sincere from the beginning?</p>
 
 <p>How could she have forgotten? Her original motive had simply been to find some kind of refuge.</p>
 
-<p>
-Once, she had been able to use that nobleman’s name as a stepping stone without regard for face or feeling; had discarded Cui-<span class="fn" data-fn="4">shaoye</span> with no hesitation; now, surely, she could do so again.
-</p>
+<p>Once, she had been able to use that nobleman’s name as a stepping stone without regard for face or feeling; had discarded <span class="fn-wrapper">Cui-shaoye
+    <span class="fn-content">少爷, a title used for sons of noble or wealthy families.</span>
+</span> with no hesitation; now, surely, she could do so again.</p>
 
-<p>
-No matter how humiliating the ending of this farce might be, Mu Xing could still escape unscathed, return to her <span class="fn" data-fn="5">unassailable</span> life, clad herself in wedding finery, and become someone else’s wife.
-</p>
+<p>No matter how humiliating the ending of this farce might be, Mu Xing could still escape unscathed, return to her <span class="fn-wrapper">unassailable
+    <span class="fn-content">固若金汤, an idiom meaning "secure as a city surrounded by metal walls and boiling water".</span>
+</span> life, clad herself in wedding finery, and become someone else’s wife.</p>
 
 <p>And what about Bai Yan? What would she be left with in the end?</p>
 
@@ -112,34 +94,20 @@ No matter how humiliating the ending of this farce might be, Mu Xing could still
 <p>At least this affair ending here meant she could still keep the sweetness of the past, and in the dark days to come might avail herself of its comfort.</p>
 
 <script>
-const footnotes = {
-    "1": "艳儿 Yan'er, a diminutive and affectionate nickname for Bai Yan.",
-    "2": "In the Republican era it was still legal for men to take additional concubines alongside their primary wife, but these concubines were of lower status. It was often seen by elite families as a backwards practice compared to increasingly popular Western norms of monogamy.",
-    "3": "逢场作戏 (\"find a stage and put on a show\"). This idiom usually refers to playing along or going through the motions.",
-    "4": "少爷, a title used for sons of noble or wealthy families.",
-    "5": "固若金汤, an idiom meaning \"secure as a city surrounded by metal walls and boiling water\"."
-};
+    document.querySelectorAll('.fn-wrapper').forEach(wrapper => {
+        wrapper.addEventListener('mouseover', () => {
+            const content = wrapper.querySelector('.fn-content');
+            // Dynamically set the max-height of the footnote on hover
+            const contentHeight = content.scrollHeight;
+            content.style.maxHeight = `${contentHeight}px`;
+        });
 
-// insert fn on hover
-document.querySelectorAll('.fn').forEach(el => {
-    let inserted = null;
-
-    el.addEventListener('mouseenter', () => {
-        if (!inserted) {
-            inserted = document.createElement('span');
-            inserted.className = 'fn-inserted';
-            inserted.textContent = footnotes[el.dataset.fn];
-            el.after(inserted);
-        }
+        wrapper.addEventListener('mouseleave', () => {
+            const content = wrapper.querySelector('.fn-content');
+            // Reset max-height when hover ends
+            content.style.maxHeight = '0';
+        });
     });
-
-    el.addEventListener('mouseleave', () => {
-        if (inserted) {
-            inserted.remove();
-            inserted = null;
-        }
-    });
-});
 </script>
 
 </body>
