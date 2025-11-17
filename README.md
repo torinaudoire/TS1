@@ -99,19 +99,19 @@ No matter how humiliating the ending of this farce might be, Mu Xing could still
 </div>
 
 <div id="footnote-2" class="footnote-panel">
-    In the Republican era it was still legal for men to take additional concubines alongside their primary wife, but concubines were of lower status. Many elite families viewed the practice as old-fashioned compared to increasingly popular Western monogamy.
+   In the Republican era it was still legal for men to take additional concubines alongside their primary wife, but these concubines were of lower status. It was often seen by elite families as a backwards practice compared to increasingly popular Western norms of monogamy.
 </div>
 
 <div id="footnote-3" class="footnote-panel">
-    逢场作戏 (“find a stage and put on a show”). An idiom referring to performing, playing along, or going through the motions without true feeling.
+    逢场作戏 ("find a stage and put on a show"). This idiom usually refers to playing along or going through the motions.
 </div>
 
 <div id="footnote-4" class="footnote-panel">
-    少爷, a polite form of address for the young master of a wealthy or noble family.
+    少爷, a title used for sons of wealthy or noble families.
 </div>
 
 <div id="footnote-5" class="footnote-panel">
-    固若金汤 (“solid as metal walls and boiling soup”), meaning firmly protected or unassailable.
+    固若金汤 ("secure as a city surrounded by metal walls and boiling water").
 </div>
 
 <script>
