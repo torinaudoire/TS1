@@ -98,7 +98,7 @@ That was right. She, too, hadn’t gotten close to Mu Xing out of love; she had 
 <p>How could she have forgotten? Her original motive had simply been to find some kind of refuge.</p>
 
 <p>
-Once, she had been able to use that nobleman’s name as a stepping stone without regard for face or feeling; had discarded <span class="fn" data-fn="4">Cui-shaoye</span> with no hesitation; now, surely, she could do so again.
+Once, she had been able to use that nobleman’s name as a stepping stone without regard for face or feeling; had discarded Cui-<span class="fn" data-fn="4">shaoye</span> with no hesitation; now, surely, she could do so again.
 </p>
 
 <p>
