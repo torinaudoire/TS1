@@ -1,11 +1,11 @@
 # ts1
-Miss Mu and the Canary
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>One Page with Accordion Footnotes</title>
+<title>Miss Mu and the Canary</title>
 
 <style>
     body {
