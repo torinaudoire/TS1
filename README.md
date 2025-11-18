@@ -13,13 +13,13 @@ body {
     padding: 0 15px;
 }
 
-/* inline trigger */
+/* fn inline trigger */
 .fn {
     color: #005bbb;
     cursor: pointer;
 }
 
-/* animated inline footnote block */
+/* fn block */
 .fn-inserted {
     display: block;
     background: #f0f4ff;
@@ -41,9 +41,9 @@ body {
         transform 0.25s ease;
 }
 
-/* end-state (visible) */
+/* end-state */
 .fn-inserted.show {
-    max-height: 500px; /* larger than any expected footnote */
+    max-height: 500px; 
     opacity: 1;
     padding: 8px 12px;
     margin: 4px 0 12px 0;
@@ -116,7 +116,7 @@ const footnotes = {
     "5": "固若金汤, an idiom meaning \"secure as a city surrounded by metal walls and boiling water\"."
 };
 
-// Smooth inline expanding/collapsing footnotes
+// transition
 document.querySelectorAll('.fn').forEach(el => {
     let inserted = null;
 
@@ -127,7 +127,6 @@ document.querySelectorAll('.fn').forEach(el => {
             inserted.textContent = footnotes[el.dataset.fn];
             el.after(inserted);
 
-            // allow initial 0-height state to render
             requestAnimationFrame(() => {
                 inserted.classList.add('show');
             });
