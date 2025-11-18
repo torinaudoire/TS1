@@ -21,12 +21,33 @@ body {
 
 /* fn container */
 .fn-inserted {
-    display: block; 
     background: #f0f4ff;
     border-left: 3px solid #005bbb;
+
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    padding: 0 12px;
+    margin: 0;
+
+    transform: translateY(-4px);
+
+    transition:
+        max-height 0.3s ease,
+        opacity 0.3s ease,
+        padding 0.3s ease,
+        margin 0.3s ease,
+        transform 0.3s ease;
+}
+
+.fn-inserted.show {
+    max-height: 500px; /* bigger than any expected note */
+    opacity: 1;
     padding: 8px 12px;
     margin: 4px 0 12px 0;
+    transform: translateY(0);
 }
+
 </style>
 </head>
 <body>
@@ -103,4 +124,3 @@ document.querySelectorAll('.fn').forEach(el => {
 
 </body>
 </html>
-![Uploading image.png…]()
